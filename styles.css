@@ -1,0 +1,119 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  min-block-size: 100vh;
+  background: linear-gradient(160deg, #f9e7fe, #e4f1ff);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #5c3c92;
+}
+
+h1 {
+  font-weight: 600;
+  color: #7048e8;
+  margin-block-end: 10px;
+}
+
+.instrucciones {
+  background: #ffffffa6;
+  border-radius: 15px;
+  padding: 15px 25px;
+  inline-size: 80%;
+  max-inline-size: 400px;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  margin-block-end: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+table {
+  border-collapse: collapse;
+  margin: 20px auto;
+}
+
+td {
+  inline-size: 90px;
+  block-size: 90px;
+  border: 3px solid #cdb4db;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 2.2em;
+  color: #5c3c92;
+  background-color: #fff;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+td:hover {
+  transform: scale(1.1);
+}
+
+button,
+select {
+  margin-block-start: 15px;
+  padding: 12px 25px;
+  background: #b892ff;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  font-size: 1em;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover,
+select:hover {
+  background: #9f7fff;
+}
+
+footer {
+  margin-block-start: 20px;
+  font-size: 0.9em;
+  color: #7a67a3;
+}
+
+@keyframes aparecer {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.modal {
+  position: fixed;
+  inset-block-start: 0;
+  inset-inline-start: 0;
+  inline-size: 100%;
+  block-size: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: #fff;
+  border-radius: 15px;
+  padding: 25px 30px;
+  max-inline-size: 400px;
+  inline-size: 90%;
+  text-align: center;
+  color: #5c3c92;
+}
+
+.modal-content h2 {
+  margin-block-start: 0;
+}
+
+.modal-content button {
+  margin-block-start: 15px;
+}
